@@ -27,7 +27,7 @@ h1 {
 
 .hero-section {
 position: relative;
-background-image: url('/images/bg.jpg'); /* Update with your image path */
+background-image: url('../../public/images/bg.jpg'); /* Update with your image path */
 background-size: cover;
 background-position: center;
 width: auto;

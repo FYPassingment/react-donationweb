@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { events } from '../data/events';
+import { useParams } from 'react-router-dom';
 
 const Booking = () => {
   const { id } = useParams();

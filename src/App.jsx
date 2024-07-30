@@ -22,23 +22,23 @@ const App = () => {
   return (
     <Router>
       <Header />
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/events" exact component={EventList} />
-        <Route path="/events/:id" component={EventDetail} />
-        <Route path="/courses" exact component={CourseList} />
-        <Route path="/courses/:id" component={CourseDetail} />
-        <Route path="/booking/:id" component={Booking} />
-        <Route path="/booking-success" component={BookingSuccess} />
-        <Route path="/booking-failed" component={BookingFailed} />
-        <Route path="/complain" component={Complain} />
-        <Route path="/faq" component={FAQ} />
-        <Route path="/login" component={Login} />
-        <Route path="/register" component={Register} />
-        <Route path="/rewards" component={Rewards} />
-        <Route path="/search" component={SearchResults} />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/events" element={<EventList />} />
+        <Route path="/events/:id" element={<EventDetail />} />
+        <Route path="/courses" element={<CourseList />} />
+        <Route path="/courses/:id" element={<CourseDetail />} />
+        <Route path="/booking/:id" element={<Booking />} />
+        <Route path="/booking-success" element={<BookingSuccess />} />
+        <Route path="/booking-failed" element={<BookingFailed />} />
+        <Route path="/complain" element={<Complain />} />
+        <Route path="/faq" element={<FAQ />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/rewards" element={<Rewards />} />
+        <Route path="/search" element={<SearchResults />} />
         {/* Add more routes as needed */}
-      </Switch>
+      </Routes>
       <Footer />
     </Router>
   );

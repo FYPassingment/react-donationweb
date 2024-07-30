@@ -10,7 +10,7 @@ const Home = () => {
           <h1>Hello</h1>
           <h1>Welcome to our Community Website</h1>
           <h1>Where you can join events & meet new faces!</h1>
-          <a href="#" className="btn btn-light mt-5">Learn More</a>
+          <a href="/learnmore" className="btn btn-light mt-5">Learn More</a>
         </div>
       </div>
 
@@ -46,7 +46,7 @@ const Home = () => {
           </div>
         </div>
         <div className="text-center mt-4">
-          <a href="#" className="btn btn-secondary btn-light shadow">More events</a>
+          <a href="/moreevent" className="btn btn-secondary btn-light shadow">More events</a>
         </div>
       </div>
 
